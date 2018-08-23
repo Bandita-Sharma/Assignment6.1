@@ -44,3 +44,23 @@ def power(a,b):
 a=int(input("enter the number of which you want to find raised power:"))
 b=int(input("enter the  second number:"))        
 print(power(a,b))
+print()
+
+#CLASS AND OBJECTS-1
+
+#Que1-->Get keys corresponding to a value in user defined dictionary.
+n=int(input("enter the number of elements:"))
+dict={}
+for i in range(n):
+    a=input().split()
+    dict[a[0]]=int(a[1])
+print("dictionary is:",dict)
+print()
+
+#Que2-->Create a dictionary and store student names and create nested dictionary to store the subject wise marks of every student.Print the marks of a given student from that ductionary for every subject.
+student={'abc':{78,89,58},'lmn':{90,100,68},'def':{46,67,90}}
+n=input("enter the name of student whose marks you want to see:")
+for key,value in student.items():
+    if n == key:
+        print(value)
+print()
